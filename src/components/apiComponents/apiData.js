@@ -3,10 +3,11 @@ import axios from 'axios';
 
 export default function apiData(){
     const [isLoading, setIsLoading] = useState(false);
+    const webAddress = "https://api.nasa.gov/planetary/apod"
     useEffect(()=>{
         setIsLoading(true);
         axios
-            .get(/*webAddressGoesHere*/)
+            .get(webAddress)
             .then(res => {
                 console.log(res);
                 setIsLoading(false);
