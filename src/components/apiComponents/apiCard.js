@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Card = props => {
+const ApiCard = props => {
+    const image = props.image;
     return (
-        <div>
+        <img src={image} alt="You got here">
             {/* {stuff goes here} */}
-        </div>
+        </img>
     );
 }
 
-export default Card;
+export default ApiCard;
